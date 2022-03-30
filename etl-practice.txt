@@ -1,0 +1,22 @@
+﻿SSIS package "C:\Users\dell\source\repos\GetSalesData\datafromdb.dtsx" starting.
+Information: 0x4004300A at Data Flow Task, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Data Flow Task, SSIS.Pipeline: Validation phase is beginning.
+Warning: 0x80049304 at Data Flow Task, SSIS.Pipeline: Warning: Could not open global shared memory to communicate with performance DLL; data flow performance counters are not available.  To resolve, run this package as an administrator, or on the system's console.
+Warning: 0x80047076 at Data Flow Task, SSIS.Pipeline: The output column "ProductNo" (35) on output "OLE DB Source Output" (34) and component "OLE DB Source" (23) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Data Flow Task, SSIS.Pipeline: The output column "ProductName" (36) on output "OLE DB Source Output" (34) and component "OLE DB Source" (23) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Data Flow Task, SSIS.Pipeline: The output column "UnitPrice" (37) on output "OLE DB Source Output" (34) and component "OLE DB Source" (23) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Information: 0x40043006 at Data Flow Task, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x40043007 at Data Flow Task, SSIS.Pipeline: Pre-Execute phase is beginning.
+Information: 0x4004300C at Data Flow Task, SSIS.Pipeline: Execute phase is beginning.
+Error: 0xC0202009 at Data Flow Task, OLE DB Destination [2]: SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005.
+An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "The statement has been terminated.".
+An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Cannot insert the value NULL into column 'SupplierName', table 'Sales.dbo.Supplier'; column does not allow nulls. INSERT fails.".
+Error: 0xC0209029 at Data Flow Task, OLE DB Destination [2]: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  The "OLE DB Destination.Inputs[OLE DB Destination Input]" failed because error code 0xC020907B occurred, and the error row disposition on "OLE DB Destination.Inputs[OLE DB Destination Input]" specifies failure on error. An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
+Error: 0xC0047022 at Data Flow Task, SSIS.Pipeline: SSIS Error Code DTS_E_PROCESSINPUTFAILED.  The ProcessInput method on component "OLE DB Destination" (2) failed with error code 0xC0209029 while processing input "OLE DB Destination Input" (15). The identified component returned an error from the ProcessInput method. The error is specific to the component, but the error is fatal and will cause the Data Flow task to stop running.  There may be error messages posted before this with more information about the failure.
+Information: 0x40043008 at Data Flow Task, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x4004300B at Data Flow Task, SSIS.Pipeline: "OLE DB Destination" wrote 9 rows.
+Information: 0x40043009 at Data Flow Task, SSIS.Pipeline: Cleanup phase is beginning.
+Task failed: Data Flow Task
+Warning: 0x80019002 at Package1: SSIS Warning Code DTS_W_MAXIMUMERRORCOUNTREACHED.  The Execution method succeeded, but the number of errors raised (3) reached the maximum allowed (1); resulting in failure. This occurs when the number of errors reaches the number specified in MaximumErrorCount. Change the MaximumErrorCount or fix the errors.
+SSIS package "C:\Users\dell\source\repos\GetSalesData\datafromdb.dtsx" finished: Failure.
+The program '[808] DtsDebugHost.exe: DTS' has exited with code 0 (0x0).
